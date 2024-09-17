@@ -64,7 +64,7 @@ export default function ProductForm({
 
     return (
         <form onSubmit={saveProduct}>
-        <label>Product name</label>
+        <label>Nombre del Producto</label>
         <input
           type="text"
           placeholder="product name"
