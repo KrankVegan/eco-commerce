@@ -1,4 +1,27 @@
+# Eco-Ecommerce Admin Panel
+
+## Project Overview
+
+This repository contains the **Admin Panel** for the **Eco-Ecommerce** platform. The Admin Panel is built using **React** and **Next.js**, with **MongoDB** as the database. It allows administrators to manage the product listings, users, and orders on the platform, ensuring smooth operations for the Eco-Ecommerce marketplace.
+
+## Features
+
+- User authentication (admin access only)
+- Product management (add, edit, delete)
+- Order management (view and update statuses)
+- Basic UI with a focus on a sustainable and eco-friendly design
+
+## Tech Stack
+
+- **React** - for building the user interface
+- **Next.js** - for server-side rendering and routing
+- **MongoDB** - for managing product, user, and order data
+- **Tailwind CSS** - for building a responsive, eco-friendly UI
+- **Axios** - for making API requests to the backend
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
