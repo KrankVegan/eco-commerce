@@ -2,7 +2,7 @@ import multiparty from 'multiparty';
 import {PutObjectCommand, S3Client} from '@aws-sdk/client-s3';
 import fs from 'fs';
 import mime from 'mime-types';
-const bucketName = 'miguel-ecocommerce';
+const bucketName = 'eco-commerce';
 
 export default async function handle(req,res) {
 

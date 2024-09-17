@@ -4,4 +4,4 @@ const CategorySchema = new Schema({
     name: {type:String, required:true}
 });
 
-export const Category = models?.Category || model('Category', CategorySchema); // asdasd
+export const Category = models?.Category || model('Category', CategorySchema); // export category model
