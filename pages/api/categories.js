@@ -1,9 +1,10 @@
 import { mongooseConnect } from "@/lib/mongoose";
 import { Category } from "@/models/Category";
 
+
 export default async function handle(req,res) {
     const {method} = req;
-    await mongooseConnect();
+    await mongooseConnect(); // moose always to get mongoDB database working
 
 
     if (method === 'GET') {

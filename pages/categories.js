@@ -22,7 +22,7 @@ export default function Categories() {
     return(
         <Layout>
             <h1>Categorias</h1>
-            <label>Nuevo Nombre de la Categoria</label>
+            <label>Nuevo Nombre De la Categoria</label>
             
             <form onSubmit={saveCategory} className="flex gap-1">
                 <input 
