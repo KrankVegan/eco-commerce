@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Spinner from "./spinner";
 import { ReactSortable } from "react-sortablejs";
@@ -11,7 +12,9 @@ export default function ProductForm({
   description: existingDescription,
   price: existingPrice,
   images:existingImages,
+  category: existingCategory,
 }){
+    const [category, setCategory] = useState(existingCategory || '');
     const [title, setTitle] = useState(existingTitle || '');
     const [description, setDescription] = useState(existingDescription || '');
     const [price, setPrice] = useState(existingPrice || '');
@@ -20,11 +23,18 @@ export default function ProductForm({
     const [goToProducts,setGoToProducts] = useState(false);
     const data = {title, description, price};
     const [isUploading, setIsUploading] = useState(false);
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+      axios.get('/api/categories').then(result => {
+        setCategories(result.data);
+    });
+  }, []); 
 
     async function saveProduct(ev) {
       ev.preventDefault();
       const data = {
-        title,description,price,images
+        title,description,price,images, category
       };
       if (_id) {
         //update
@@ -100,6 +110,17 @@ export default function ProductForm({
 
           </label>
         </div>
+
+        <label> Categoria </label>
+        <select value={category} 
+                  onChange={ev => setCategory(ev.target.value)}> 
+
+          <option value="">Sin Categoria</option>
+          {categories.length > 0 && categories.map(c => (
+            <option value={c._id}>{c.name}</option>
+          ))}
+        </select>
+
         <label>Descripción</label>
         <textarea 
             placeholder="description" 
