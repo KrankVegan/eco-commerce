@@ -23,27 +23,47 @@ This repository contains the **Admin Panel** for the **Eco-Ecommerce** platform.
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
-## Getting Started
+## Como Correr Proyecto utilizando Yarn
 
-First, run the development server:
+Sigue los siguientes pasos para poder correr este proyecto: 
+
+## Vaya a la carpeta del proyecto
+
+Abra su terminal y vaya al directorio raíz de su proyecto Next.js.
+
+## Instalar dependecias
+
+Utilizar el siguiente comando cuando nos encontramos en el directorio del proyecto:
+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Iniciar proyecto
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Ya con las dependencias necesarias, se procede a correr el siguiente comando:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+yarn dev
+```
+
+## Abrir puerto local
+
+Por ultimo, vamos al siguiente url en nuestro browser preferido:
+
+
+```bash
+http://localhost:3000/
+```
+
+
+
+
+**Nota: Si tienes problemas con http://localhost:3000, prueba accediendo a http://localhost:3000/categories. A partir de ahí, debería funcionar correctamente.** 
+
 
 ## Learn More
 
