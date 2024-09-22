@@ -35,6 +35,7 @@ Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
 - **Ver órdenes hechas**: En la aplicación complementaria del **Panel de Administración**, los administradores pueden visualizar y gestionar todas las órdenes realizadas por los usuarios.
 - **Agregar categorías y propiedades a productos**: Los productos pueden ser organizados por categorías y se les pueden añadir propiedades específicas como tamaño, color, y más.
 - **Gestión completa del catálogo**: A través del panel complementario, los administradores pueden agregar, editar y eliminar productos, así como ver y actualizar el inventario.
+- **Login con Google**: Conexión a la app utilzando la libreria **https://authjs.dev/**, siendo Google un proveedor.
 
 ## Proyecto Complementario
 
