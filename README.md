@@ -1,26 +1,46 @@
-# Eco-Ecommerce Admin Panel
+# Eco-Commerce: Admin Panel 🌿
 
-## Project Overview
+**Eco-Ecommerce** es una plataforma diseñada para la venta de productos amigables con el medio ambiente. Ofrecemos una selección curada de artículos sostenibles que incluyen moda orgánica, tecnología verde y elementos para el hogar ecológicos. Nuestro objetivo es promover un estilo de vida consciente, brindando acceso a productos que reducen el impacto ambiental y respetan los recursos naturales.
 
-This repository contains the **Admin Panel** for the **Eco-Ecommerce** platform. The Admin Panel is built using **React** and **Next.js**, with **MongoDB** as the database. It allows administrators to manage the product listings, users, and orders on the platform, ensuring smooth operations for the Eco-Ecommerce marketplace.
+En esta parte del proyecto se plantea ver la vista de administrador y el manejo de lo visto en el User-Front.
 
-## Features
-
-- User authentication (admin access only)
-- Product management (add, edit, delete)
-- Order management (view and update statuses)
-- Basic UI with a focus on a sustainable and eco-friendly design
-
-## Tech Stack
-
-- **React** - for building the user interface
-- **Next.js** - for server-side rendering and routing
-- **MongoDB** - for managing product, user, and order data
-- **Tailwind CSS** - for building a responsive, eco-friendly UI
-- **Axios** - for making API requests to the backend
+![ecocommerce](https://github.com/user-attachments/assets/1259bd33-6363-418e-86e0-5f88db7000d3)
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+## Tecnologías Utilizadas
+
+Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
+
+- **Next.js**: Utilizado para la creación de una aplicación web rápida, con soporte para renderizado del lado del servidor (SSR) y rutas dinámicas, lo que mejora la experiencia del usuario.
+- **MongoDB**: Base de datos NoSQL utilizada para manejar de manera eficiente los productos, usuarios y pedidos de la plataforma.
+- **React**: Biblioteca para la construcción de la interfaz de usuario, proporcionando una experiencia interactiva y fácil de usar.
+- **Node.js**: Utilizado para el backend del proyecto, facilitando la gestión de API y la conexión con la base de datos.
+- **Tailwinds**: es un framework de CSS que, a diferencia de los tradicionales como Bootstrap, no crea componentes con una sola clase, sino que tiene algo llamado Utility Classes, que son clases específicas para casa cosa.
+
+
+
+
+
+
+![stackFULLHD](https://github.com/user-attachments/assets/a29a0c4b-3343-4e01-9c28-045f1c6a0c42)
+
+
+## Características Principales
+
+- **Conexión a un bucket de AWS S3**: Permite almacenar y gestionar imágenes de productos de manera eficiente en la nube.
+- **Conexión a MongoDB**: Utilizado como la base de datos principal para gestionar productos, usuarios y órdenes de manera eficiente.
+- **Agregar nuevos productos**: Los administradores pueden añadir nuevos productos al catálogo con facilidad, especificando categorías y propiedades.
+- **Ver órdenes hechas**: En la aplicación complementaria del **Panel de Administración**, los administradores pueden visualizar y gestionar todas las órdenes realizadas por los usuarios.
+- **Agregar categorías y propiedades a productos**: Los productos pueden ser organizados por categorías y se les pueden añadir propiedades específicas como tamaño, color, y más.
+- **Gestión completa del catálogo**: A través del panel complementario, los administradores pueden agregar, editar y eliminar productos, así como ver y actualizar el inventario.
+
+## Proyecto Complementario
+
+Este proyecto está complementado por un **Front-Store** que permite tener un contacto directo con la tienda.
+
+Para más detalles sobre esta front store, puedes visitar su repositorio [aquí](https://github.com/KrankVegan/userinterface).
 
 
 ## Como Correr Proyecto utilizando Yarn
@@ -65,17 +85,4 @@ http://localhost:3000/
 **Nota: Si tienes problemas con http://localhost:3000, prueba accediendo a http://localhost:3000/categories. A partir de ahí, debería funcionar correctamente.** 
 
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
